@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registro para un Torneo de Videojuegos
+        </title>
+
+        <style>
+            h1
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+
+            table
+            {
+                border: 3px solid b;
+                border-collapse: collapse;
+            }
+            
+            th
+            {
+               text-align: left
+            }
+
+            body
+            {
+                background-color: rgba(49, 10, 37, 0.421);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Registro - Torneo Yordle</h1>
+
+        <table border="2" cellpadding="3">
+            <tr>
+             <th>
+                Nombre del jugador:
+                <td>
+                    <input type = "text" placeholder="Escribe tu nombre aquí..." minlength="3" maxlength="15" required>
+                </td>
+             </th>  
+            </tr>
+            <tr>
+             <th>
+                Correo:
+                <td>
+                   <input type = "email" placeholder="ejemplo@correo.com..." required>
+                </td>
+             </th>  
+            </tr>
+            <tr>
+             <th>
+                Edad:
+                <td>
+                    <input type = "number" min="12" max="40" required >
+                </td>
+             </th>  
+            </tr>
+            <tr>
+             <th>
+                Nickname:
+                <td>
+                    <input type = "text" placeholder="Escribe tu nickname..." pattern="[A-Za-z0-9]+" required>
+                </td>
+             </th>  
+            </tr>
+            <tr>
+             <th>
+                Categoría:
+                <td>
+                    <input type="radio" name="principiante" value="Principiante" required> Principiante
+                    <input type="radio" name="intermedio" value="Intermedio"> Intermedio
+                    <input type="radio" name="experto" value="Experto"> Experto
+                </td>
+             </th>  
+            </tr>
+            <tr>
+             <th>
+                Juegos favoritos:
+                <td>
+                    <input type="checkbox" id="JuegofavLOL" value="League of Legends" >League of Legends
+                    <input type="checkbox" id="JuegofavMin" value="Minecraft" >Minecraft
+                    <input type="checkbox" id="JuegofavVal" value="Valorant" >Valorant
+                </td>
+             </th>  
+            </tr>
+            <tr>
+             <th>
+                Fecha de Inscripción: 
+                <td>
+                    <input type="date" min="2025-01-01" max="2025-12-31" required >
+                </td>
+             </th>  
+            </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Enviar registro">
+        <input type="reset" value="Restablecer">
+    </body>
